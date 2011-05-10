@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cowboycoded}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["John McAliley"]
@@ -20,9 +20,15 @@ Gem::Specification.new do |s|
     ".document",
     "Gemfile",
     "LICENSE.txt",
+    "README.md",
     "Rakefile",
     "VERSION",
-    "lib/my_generators/railtie.rb",
+    "cowboycoded.gemspec",
+    "lib/cowboycoded.rb",
+    "lib/cowboycoded/railtie.rb",
+    "lib/generators/cowboycoded/test_group/USAGE",
+    "lib/generators/cowboycoded/test_group/templates/Gemfile",
+    "lib/generators/cowboycoded/test_group/test_group_generator.rb",
     "spec/spec_helper.rb",
     "spec/templates/Gemfile",
     "spec/test_generator_spec.rb",
