@@ -15,4 +15,5 @@ end
 group :test do
   gem "rspec"
   gem "systemu"
+  gem "rails"
 end
