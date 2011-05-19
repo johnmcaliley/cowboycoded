@@ -9,6 +9,12 @@ Utility classes, core_ext, generators and rake tasks to help ease development
 Add test group to your gemfile
 
     rails g cowboycoded:test_group
+    
+## Core Extensions
+
+### String
+    "1,000.12".is_numeric? #=> true
+    "abc".is_numeric? #=> false
 
 
 ## Contributing to my_generators
