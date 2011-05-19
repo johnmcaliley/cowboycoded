@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cowboycoded}
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["John McAliley"]
-  s.date = %q{2011-05-10}
+  s.date = %q{2011-05-19}
   s.description = %q{helps you code quicker}
   s.email = %q{john.mcaliley@gmail.com}
   s.extra_rdoc_files = [
@@ -24,11 +24,19 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "cowboycoded.gemspec",
+    "lib/core_ext/string.rb",
     "lib/cowboycoded.rb",
+    "lib/cowboycoded/cucumber_steps/browser.rb",
+    "lib/cowboycoded/cucumber_steps/file.rb",
     "lib/cowboycoded/railtie.rb",
+    "lib/generators/cowboycoded/common_app/USAGE",
+    "lib/generators/cowboycoded/common_app/common_app_generator.rb",
+    "lib/generators/cowboycoded/engine/engine_generator.rb",
+    "lib/generators/cowboycoded/railtie/railtie_generator.rb",
     "lib/generators/cowboycoded/test_group/USAGE",
     "lib/generators/cowboycoded/test_group/templates/Gemfile",
     "lib/generators/cowboycoded/test_group/test_group_generator.rb",
+    "spec/core_ext_spec.rb",
     "spec/spec_helper.rb",
     "spec/templates/Gemfile",
     "spec/test_generator_spec.rb",
@@ -81,6 +89,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = %q{1.3.7}
   s.summary = %q{Utility classes, core_ext and generators to ease development}
   s.test_files = [
+    "spec/core_ext_spec.rb",
     "spec/spec_helper.rb",
     "spec/test_generator_spec.rb"
   ]
