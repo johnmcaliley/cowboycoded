@@ -1,7 +1,6 @@
 class String
   def is_numeric?
-    self.gsub!(",","")
-    Float(self)
+    Float(self.gsub(",",""))
     true 
   rescue 
     false
