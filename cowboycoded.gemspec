@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{cowboycoded}
-  s.version = "0.0.3"
+  s.version = "0.0.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["John McAliley"]
-  s.date = %q{2011-05-20}
+  s.date = %q{2011-05-23}
   s.description = %q{helps you code quicker}
   s.email = %q{john.mcaliley@gmail.com}
   s.extra_rdoc_files = [
@@ -26,12 +26,13 @@ Gem::Specification.new do |s|
     "cowboycoded.gemspec",
     "lib/core_ext/string.rb",
     "lib/cowboycoded.rb",
-    "lib/cowboycoded/cucumber_steps/browser.rb",
-    "lib/cowboycoded/cucumber_steps/file.rb",
     "lib/cowboycoded/railtie.rb",
     "lib/generators/cowboycoded/common_app/USAGE",
     "lib/generators/cowboycoded/common_app/common_app_generator.rb",
+    "lib/generators/cowboycoded/cucumber_step/cucumber_step_generator.rb",
+    "lib/generators/cowboycoded/cucumber_step/templates/features/step_definitions/file_steps.rb",
     "lib/generators/cowboycoded/engine/engine_generator.rb",
+    "lib/generators/cowboycoded/javascripts/cowboycoded.js",
     "lib/generators/cowboycoded/railtie/railtie_generator.rb",
     "lib/generators/cowboycoded/test_group/USAGE",
     "lib/generators/cowboycoded/test_group/templates/Gemfile",
@@ -50,6 +51,7 @@ Gem::Specification.new do |s|
     "test_app/config.ru",
     "test_app/config/application.rb",
     "test_app/config/boot.rb",
+    "test_app/config/cucumber.yml",
     "test_app/config/database.yml",
     "test_app/config/environment.rb",
     "test_app/config/environments/development.rb",
@@ -63,7 +65,13 @@ Gem::Specification.new do |s|
     "test_app/config/locales/en.yml",
     "test_app/config/routes.rb",
     "test_app/db/seeds.rb",
+    "test_app/features/cucumber_steps.feature",
+    "test_app/features/step_definitions/web_steps.rb",
+    "test_app/features/support/env.rb",
+    "test_app/features/support/paths.rb",
+    "test_app/features/support/selectors.rb",
     "test_app/lib/tasks/.gitkeep",
+    "test_app/lib/tasks/cucumber.rake",
     "test_app/public/404.html",
     "test_app/public/422.html",
     "test_app/public/500.html",
@@ -78,6 +86,7 @@ Gem::Specification.new do |s|
     "test_app/public/javascripts/rails.js",
     "test_app/public/robots.txt",
     "test_app/public/stylesheets/.gitkeep",
+    "test_app/script/cucumber",
     "test_app/script/rails",
     "test_app/test/performance/browsing_test.rb",
     "test_app/test/test_helper.rb",
